@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [[ "$1" -eq 'start' ]] ; then
+if [[ "$1" == 'start' ]] ; then
   echo "Open port for Android device..."
   adb reverse tcp:8081 tcp:8081
 fi
